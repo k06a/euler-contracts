@@ -5,56 +5,56 @@
 
 
 NODE_ENV=$1 npx hardhat --network ropsten testtoken:mint DAI $2 1000
-sleep 2m
+sleep 30s
 NODE_ENV=$1 npx hardhat --network ropsten testtoken:mint USDC $2 1000
-sleep 2m
+sleep 30s
 NODE_ENV=$1 npx hardhat --network ropsten testtoken:mint USDT $2 1000
-sleep 2m
+sleep 30s
 NODE_ENV=$1 npx hardhat --network ropsten testtoken:mint WBTC $2 1000
-sleep 2m
+sleep 30s
 NODE_ENV=$1 npx hardhat --network ropsten testtoken:mint UNI $2 1000
-sleep 2m
+sleep 30s
 NODE_ENV=$1 npx hardhat --network ropsten testtoken:mint COMP $2 1000
-sleep 2m
+sleep 30s
 NODE_ENV=$1 npx hardhat --network ropsten testtoken:mint REP $2 1000
-sleep 2m
+sleep 30s
 NODE_ENV=$1 npx hardhat --network ropsten testtoken:mint BZRX $2 1000
-sleep 2m
+sleep 30s
 NODE_ENV=$1 npx hardhat --network ropsten testtoken:mint DOUGH $2 1000
-sleep 2m
+sleep 30s
 NODE_ENV=$1 npx hardhat --network ropsten testtoken:mint CRV $2 1000
-sleep 2m
+sleep 30s
 : <<'END'
 # cannot mint link in secure mode
 NODE_ENV=$1 npx hardhat --network ropsten testtoken:mint LINK $2 1000
-sleep 2m
-END
+sleep 30s
 NODE_ENV=$1 npx hardhat --network ropsten testtoken:mint NORD $2 1000
-sleep 2m
+sleep 30s
 NODE_ENV=$1 npx hardhat --network ropsten testtoken:mint PNK $2 1000
-sleep 2m
+sleep 30s
 NODE_ENV=$1 npx hardhat --network ropsten testtoken:mint NFY $2 1000
-sleep 2m
+sleep 30s
 NODE_ENV=$1 npx hardhat --network ropsten testtoken:mint AVGC $2 1000
-sleep 2m
+sleep 30s
 NODE_ENV=$1 npx hardhat --network ropsten testtoken:mint 127760 $2 1000
-sleep 2m
+sleep 30s
+END
 # NEW TOKENS
 NODE_ENV=$1 npx hardhat --network ropsten testtoken:mint BAT $2 1000
-sleep 2m
+sleep 30s
 NODE_ENV=$1 npx hardhat --network ropsten testtoken:mint MKR $2 1000
-sleep 2m
+sleep 30s
 NODE_ENV=$1 npx hardhat --network ropsten testtoken:mint renBTC $2 1000
-sleep 2m
+sleep 30s
 NODE_ENV=$1 npx hardhat --network ropsten testtoken:mint LUSD $2 1000
-sleep 2m
+sleep 30s
 NODE_ENV=$1 npx hardhat --network ropsten testtoken:mint MANA $2 1000
-sleep 2m
+sleep 30s
 NODE_ENV=$1 npx hardhat --network ropsten testtoken:mint CELR $2 1000
-sleep 2m
+sleep 30s
 NODE_ENV=$1 npx hardhat --network ropsten testtoken:mint CVX $2 1000
-sleep 2m
+sleep 30s
 NODE_ENV=$1 npx hardhat --network ropsten testtoken:mint renDOGE $2 1000
-sleep 2m
+sleep 30s
 NODE_ENV=$1 npx hardhat --network ropsten testtoken:mint AAVE $2 1000
-sleep 2m
+sleep 30s
