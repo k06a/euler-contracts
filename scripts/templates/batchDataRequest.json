@@ -1,0 +1,10 @@
+{
+    "contracts": ["EToken", "EToken", "DToken"],
+    "addresses": ["0xC2241171a97D6944140EFa1A8E634a77f20e5E81", "0xC2241171a97D6944140EFa1A8E634a77f20e5E81", "0x010F6531e8958c9d0F6d881FFa4fC236F7473DD2"],
+    "functions": ["balanceOf", "transfer", "totalSupply"],
+    "args": [
+        ["0x123708B745f8979e2BE846ECBD3E61D986485ea5"], 
+        ["0x123708B745f8979e2BE846ECBD3E61D986485ea5", 10], 
+        []
+    ]
+}
