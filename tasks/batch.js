@@ -8,13 +8,13 @@ task("batch:EulerBatchItems")
         const { abi, bytecode, } = require('../artifacts/contracts/modules/Exec.sol/Exec.json');
         const exec = new ethers.Contract(ctx.contracts.exec.address, abi, ctx.wallet);
                 
-        let contractNames = filePath.contracts;
-        let functionNames = filePath.functions;
-        let contractAddress = filePath.addresses;
-        let functionArgs = filePath.args;
+        const contractNames = filePath.contracts;
+        const functionNames = filePath.functions;
+        const contractAddress = filePath.addresses;
+        const functionArgs = filePath.args;
+        
         let batchData = [];
         let encodedBatchData;
-        
         // todo: error handling
         // validate function names (DONE)
         // validate contract name
