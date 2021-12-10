@@ -15,10 +15,6 @@ task("batch:EulerBatchItems")
         
         let batchData = [];
         let encodedBatchData;
-        // todo: error handling
-        // validate function names (DONE)
-        // validate contract name
-        // validate function args, count, and data types
 
         if (contractNames.length == functionNames.length && functionNames.length == functionArgs.length) {
             console.log("[valid] data array lengths match")
