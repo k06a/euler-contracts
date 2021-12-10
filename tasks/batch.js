@@ -1,5 +1,4 @@
 task("batch:EulerBatchItems")
-    // .addPositionalParam("filePath")
     .setAction(async (args) => {
         const et = require("../test/lib/eTestLib");
         const ctx = await et.getTaskCtx();
@@ -15,6 +14,7 @@ task("batch:EulerBatchItems")
         
         let batchData = [];
         let encodedBatchData;
+    
 
         if (contractNames.length == functionNames.length && functionNames.length == functionArgs.length) {
             console.log("[valid] data array lengths match")
@@ -28,7 +28,7 @@ task("batch:EulerBatchItems")
                     console.log("Invalid function name", functionNames[i]);
                     return;
                 }
-
+    
                 let tempBatchData = {
                     allowError: false,
                     proxyAddr: contractAddress[i],
