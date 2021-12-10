@@ -1,8 +1,10 @@
 task("batch:EulerBatchItems")
+.addPositionalParam("jsonFilePath")
     .setAction(async (args) => {
         const et = require("../test/lib/eTestLib");
         const ctx = await et.getTaskCtx();
-        const filePath = require("../scripts/templates/batchDataRequest.json");
+        const path = args.jsonFilePath;
+        const filePath = require(path);
 
         const { abi, bytecode, } = require('../artifacts/contracts/modules/Exec.sol/Exec.json');
         const exec = new ethers.Contract(ctx.contracts.exec.address, abi, ctx.wallet);
@@ -42,5 +44,6 @@ task("batch:EulerBatchItems")
             console.log("[error] check json data array lengths match")
             return;
         }
-        // usage: NODE_ENV=alchemy npx hardhat batch:EulerBatchItems --network ropsten
+        // usage: NODE_ENV=alchemy npx hardhat batch:EulerBatchItems "../scripts/templates/batchDataRequest.json" --network ropsten
+        // example file structure in ../scripts/templates/batchDataRequest.json
     });
